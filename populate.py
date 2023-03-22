@@ -25,7 +25,7 @@ for network in my_networks:
     data.append(temp)
 
 # Write CSV file
-with open("networks.csv", "wt") as fp:
+with open("networks.csv", "w",newline="") as fp:
     writer = csv.writer(fp, delimiter=",")
 
     # write header of csv file

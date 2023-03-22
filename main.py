@@ -95,7 +95,7 @@ header = temp_list
 
 
 # create csv file and dump dataset while inserting None to values that do not exist
-with open("output.csv", "w") as f:
+with open("output.csv", "w",newline="") as f:
     writer = csv.writer(f)
     writer.writerow(header)
     for d in counter_list:
